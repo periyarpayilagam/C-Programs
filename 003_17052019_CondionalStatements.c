@@ -56,7 +56,7 @@ int main()
   
   //For switch case
   
-  char x='d';
+  char x='b';
   
   switch(x)
   {
@@ -66,9 +66,11 @@ int main()
 	  
 	  case 'b':
 	  printf("I am B \n");
-	  break;
+	  goto label;
+	 
 	  
 	  case 'a':
+	  label:
 	  printf("I am A \n");
 	  break;
 	  
@@ -111,15 +113,15 @@ int main()
 
 /*
 
-D:\C\ctut>gcc -o Cond Conditional.c
 
-D:\C\ctut>Cond.exe
+D:\C\ctut>cond
 A>B
 A>B
 A>=B
 A!=B
 A>=B
-Nothing...
+I am B
+I am A
 For loop printing Page: 1
 For loop printing Page: 2
 For loop printing Page: 3
@@ -132,5 +134,6 @@ While loop printing Page: 3
 While loop printing Page: 4
 While loop printing Page: 5
 Do while printing Page: 0
+
 
 */
