@@ -1,12 +1,15 @@
-#include <stdio.h>      
-#include <conio.h>    
-//defining function    
-void come(){  // user defined function
-printf("\nWelcome to Payilagam.");  
-}  
-void main(){      
-come();//calling a function  
-come();  
-come();  
-//getch();      
-}      
+#include<stdio.h>
+int add()
+{
+	printf("%d",(10+20));
+}
+int main()
+{
+   add();
+   return 0;
+}
+
+/*
+Output:-
+30
+*/
